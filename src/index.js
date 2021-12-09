@@ -118,7 +118,6 @@ const litstorage = () => {
       }
     });
     adJusttext(listInput);
-    
   });
 };
 
@@ -147,10 +146,3 @@ const interact = (listInput) => {
 };
 
 showTasks();
-
-  
-
-  
-
-  
-
