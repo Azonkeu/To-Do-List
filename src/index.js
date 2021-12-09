@@ -1,4 +1,3 @@
-import _ from 'lodash';
 import './style.css';
 
 const todoArr = [];
@@ -146,3 +145,5 @@ const interact = (listInput) => {
 };
 
 showTasks();
+/* eslint-disable no-unused-vars */
+export default litstorage;
