@@ -52,7 +52,7 @@ const removeItem = () => {
         todoArr.splice(index, 1);
       }
       for (let i = 0; i < todoArr.length; i += 1) {
-        todoArr[i].index = i ;
+        todoArr[i].index = i;
       }
       localStorage.setItem('itemsLocal', JSON.stringify(todoArr));
       add();
@@ -69,7 +69,7 @@ const clearList = () => {
       }
     }
     for (let i = 0; i < todoArr.length; i += 1) {
-        todoArr[i].index = i + 1;
+      todoArr[i].index = i + 1;
     }
     localStorage.setItem('itemsLocal', JSON.stringify(todoArr));
     add();
@@ -83,7 +83,7 @@ const updateValues = () => {
     const superParent = parent.parentNode;
     const index = Array.prototype.indexOf.call(superParent.children, parent);
     item.addEventListener('change', () => {
-        todoArr[index].description = item.value;
+      todoArr[index].description = item.value;
       localStorage.setItem('itemsLocal', JSON.stringify(todoArr));
     });
   });
@@ -116,7 +116,7 @@ export default function storageForTask() {
     });
     textDecor(listInput);
   });
-};
+}
 
 const interact = (listInput) => {
   listInput.forEach((item) => {
@@ -143,4 +143,3 @@ const interact = (listInput) => {
 };
 
 showTasks();
-

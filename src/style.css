@@ -22,7 +22,7 @@ h3 {
   flex: 1;
   padding-left: 2%;
   font-weight: normal;
-  max-width: 60;
+  max-width: 60%;
 }
 
 .fa-sync-alt {
@@ -98,7 +98,7 @@ li {
 .list-input {
   flex: 1;
   max-width: 8%;
-  transform: scale(1.2)
+  transform: scale(1.2);
 }
 
 .item-details {
