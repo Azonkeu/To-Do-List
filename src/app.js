@@ -2,7 +2,7 @@ const todoArr = [];
 /* eslint-disable no-use-before-define */
 const add = () => {
   const list = document.querySelector('.task-list');
-  const itemsLocal = JSON.parse(localStorage.getItem('itemsLocal'));
+  const itemsLocal = JSON.parse(localStorage.getItem('itemsLocal')) || [];;
   todoArr.splice(0, todoArr.length, ...itemsLocal);
   list.innerHTML = '';
   for (let i = 0; i < todoArr.length; i += 1) {
@@ -45,7 +45,7 @@ const removeItem = () => {
     const index = Array.prototype.indexOf.call(superParent.children, parent);
     const listInput = parent.firstChild;
     item.addEventListener('click', () => {
-      const itemsLocal = JSON.parse(localStorage.getItem('itemsLocal'));
+      const itemsLocal = JSON.parse(localStorage.getItem('itemsLocal')) || [];
       todoArr.splice(0, todoArr.length, ...itemsLocal);
       if (listInput.hasAttribute('checked')) {
         parent.remove();
