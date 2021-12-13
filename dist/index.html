@@ -7,22 +7,22 @@
     <title>To Do List</title>
 <script defer src="main.js"></script></head>
 <body>
-    <main class="to-do-list-container to-do">
+    <main class="to-do">
         <header>
-            <h3>Today's To Do</h3><i class="fas fa-sync-alt"></i>
+            <h3>Today's To Do<i class="fas fa-sync-alt"></i></h3>
         </header>
-        <form id="form-id" class="add-task todo-form">
-            <input  type="text" placeholder="Add your task here ...">
-            <button type="submit" class="add-button"><i class="fas fa-level-down-alt fa-rotate-90 icon fa-2x"></i></button>
+        <form id="form-id" class="add-task" data-new-task-form>
+            <input  type="text" placeholder="Add to your list..." data-new-task-input>
+            <i class="fas fa-level-down-alt fa-rotate-90 icon"></i>
             <input class="submit" type="submit" hidden>
         </form>
         <div class="show-task">
-            <ul class="ullist todo-items task-list"></ul>
+            <ul class="ullist" data-task></ul>
         </div>
         <div class="clear-task">
-            <h4 class="clean">Clear all completed</h4>
+            <h4>Clear all completed</h4>
         </div>
-        </main>
+    </main>
     <script type="module" src="index.js"></script>
 </body>
 </html>
