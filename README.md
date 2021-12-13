@@ -30,9 +30,13 @@ In this project, we will build a simple HTML list of To Do tasks. The list will 
  - On page load render the dynamically created list of tasks in the dedicated placeholder. The list should apear in order of the `index` values for each task.
  - Create a **style.css** and set rules for the **To Do List**. CSS must be loaded by *Webpack Style/CSS Loader*. Your list should be a clone of the part of the minimalist project captured in the image below.
 
- ![image](https://camo.githubusercontent.com/d04bee7a5b8f62cc6655dbec65c4d14583e4d78d0c434ddc070f6881bb9568fc/68747470733a2f2f696d672e796f75747562652e636f6d2f76692f416355642d5f596a6a71672f302e6a7067){width=4in}
+ 
+ 
+ ![image](https://camo.githubusercontent.com/d04bee7a5b8f62cc6655dbec65c4d14583e4d78d0c434ddc070f6881bb9568fc/68747470733a2f2f696d672e796f75747562652e636f6d2f76692f416355642d5f596a6a71672f302e6a7067)
 
-    Check out my [repository](https://github.com/Azonkeu/To-Do-List) for more details.
+## Demo
+
+Check out the [live version](https://azonkeu.github.io/To-Do-List/) of the website.
 
  ## Built With
 
