@@ -1,145 +1,135 @@
+*,
+::before,
+::after {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
 body {
-  display: flex;
-  flex-direction: column;
   background-color: #f6f6f6;
   max-width: 100%;
 }
 
 .to-do {
-  flex: 1;
-  display: flex;
-  flex-direction: column;
-  width: 40%;
-  margin-top: 10%;
-  margin-left: auto;
-  margin-right: auto;
+  margin: 10% 15% 10% 50%;
+  transform: translateX(-50%);
   border: 5px solid rgb(245, 245, 245);
   box-shadow: 4px 5px 8px grey;
   background-color: #fff;
 }
 
-h3 {
-  flex: 1;
-  padding-left: 2%;
+main header h3 {
+  border-bottom: 1px solid rgb(221, 220, 220);
+  padding: 1rem 0;
+  padding-left: 0.8rem;
+  margin-bottom: 0;
+  margin-top: 0;
   font-weight: normal;
-  max-width: 60%;
 }
 
-.fa-sync-alt {
+i {
   color: #e0dbdb;
-  margin-left: auto;
-  margin-right: 3%;
+  opacity: 0.8;
 }
 
-header {
-  flex: 1;
+main header h3 > i {
+  float: right;
+  margin-right: 2rem;
+}
+
+.add-task {
   display: flex;
-  flex-direction: row;
-  width: 100%;
-  align-items: center;
-  border-bottom: 2px solid rgb(221, 220, 220);
+  align-items: baseline;
+  border-bottom: 1px solid rgb(221, 220, 220);
 }
 
-.todo-form {
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-  padding: 1%;
-  max-width: 100%;
-  border-bottom: 2px solid rgb(221, 220, 220);
+.icon {
+  margin-right: 2rem;
 }
 
-.add-button {
-  margin-left: auto;
-  margin-right: 2%;
-  background-color: #fff;
-  border: none;
+.fa-ellipsis-v {
+  position: absolute;
+  right: 2rem;
+  top: 1rem;
 }
 
-.fa-level-down-alt {
-  color: #e0dbdb;
-}
-
-input {
-  flex: 1;
+.add-task input {
   outline: none;
   padding: 1rem 0;
   padding-left: 0.8rem;
   border: none;
-  max-width: 60%;
-  font-size: 1em;
-  font-style: italic;
+  width: 97%;
 }
 
 ul {
-  display: flex;
-  flex-direction: column;
-  max-width: 100%;
   margin-top: 0;
   padding-left: 0;
-  margin-bottom: 0;
 }
 
 li {
-  flex: 1;
-  display: flex;
-  max-width: 100%;
   list-style-type: none;
   border-bottom: 1px solid rgb(221, 220, 220);
-  align-items: center;
-  padding-top: 1%;
-  padding-bottom: 1%;
+  padding: 0.8rem 0;
+  padding-left: 0.8rem;
+  position: relative;
 }
 
 [type~="checkbox"] {
   cursor: pointer;
 }
 
-.list-input {
-  flex: 1;
-  max-width: 8%;
-  transform: scale(1.2);
+label {
+  margin-left: 0.8rem;
 }
 
-.item-details {
-  flex: 1;
-  max-width: 70%;
-  align-self: center;
-  font-size: 1.2em;
-  position: inherit;
-  padding-top: 13px;
-  height: 2rem;
-  border: none;
-  resize: none;
-  outline: none;
-}
-
-.fa-ellipsis-v {
-  flex: 1;
-  margin-left: auto;
-  margin-right: 3%;
-  max-width: 3%;
-  color: rgba(83, 83, 83, 0.7);
-}
-
-.fa-edit {
-  flex: 1;
-  margin-left: auto;
-  margin-right: 1%;
-  max-width: 3%;
-  color: rgba(83, 83, 83, 0.7);
-}
-
-.checked {
-  text-decoration: line-through;
-}
-
-.clear-task {
+.clear-task h4 {
   padding: 1rem 0.7rem;
   text-align: center;
   background-color: #f6f6f6;
   font-weight: normal;
   z-index: 100;
   cursor: pointer;
-  margin-top: 0;
+}
+
+.list-item {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  padding-left: 0.5rem;
+}
+
+.list-input {
+  transform: scale(1.2);
+}
+
+.item-details {
+  height: 2rem;
+  padding: 0.5rem;
+  width: 80%;
+  border: none;
+  resize: none;
+  outline: none;
+}
+
+.fa-trash-alt {
+  display: none;
+  position: absolute;
+  right: 2rem;
+  color: rgba(83, 83, 83, 0.7);
+}
+
+input::placeholder {
+  font-style: italic;
+  font-size: 1.2em;
+}
+
+.fa-square {
+  font-size: 1.1rem;
+  margin-top: 1.1rem;
+  color: rgb(83, 83, 83);
+}
+
+.checked {
+  text-decoration: line-through;
 }
